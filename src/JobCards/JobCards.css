@@ -1,12 +1,8 @@
-
-
-* {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
 
-body {
   font-family: Inter, "Segoe UI", Arial, sans-serif;
   background: #f5f7fb;
   color: #172033;
@@ -65,8 +61,10 @@ button {
   gap: 10px;
 
   padding: 14px 20px;
+
   background: #ecfdf3;
   border: 1px solid #abefc6;
+
   color: #067647;
 
   border-radius: 10px;
@@ -89,8 +87,11 @@ button {
   color: white;
 
   border-radius: 50%;
+
   font-size: 14px;
 }
+
+
 
 .jobs-container {
   max-width: 1200px;
@@ -98,11 +99,14 @@ button {
 
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+
   gap: 25px;
 }
 
 
 .job-card {
+  position: relative;
+
   background: #ffffff;
 
   border: 1px solid #e4e7ec;
@@ -114,8 +118,6 @@ button {
     transform 0.25s ease,
     box-shadow 0.25s ease,
     border-color 0.25s ease;
-
-  position: relative;
 }
 
 .job-card:hover {
@@ -152,8 +154,10 @@ button {
 
   font-size: 9px;
   font-weight: 800;
+
   letter-spacing: 0.8px;
 }
+
 
 .card-top {
   display: flex;
@@ -162,6 +166,8 @@ button {
 
   margin-bottom: 20px;
 }
+
+
 
 .company-logo {
   width: 65px;
@@ -193,10 +199,11 @@ button {
 }
 
 
+
 .save-button {
   border: 1px solid #d0d5dd;
-  background: white;
 
+  background: white;
   color: #475467;
 
   border-radius: 8px;
@@ -205,6 +212,7 @@ button {
 
   display: flex;
   align-items: center;
+
   gap: 6px;
 
   font-size: 13px;
@@ -230,23 +238,31 @@ button {
 }
 
 
+
 .job-details h2 {
   font-size: 22px;
+
   color: #101828;
+
   margin-bottom: 7px;
 }
 
 .company-name {
   color: #6f2fd6;
+
   font-size: 15px;
   font-weight: 650;
+
   margin-bottom: 20px;
 }
 
 
+
 .job-info {
   display: grid;
+
   grid-template-columns: repeat(2, 1fr);
+
   gap: 13px;
 
   margin-bottom: 20px;
@@ -254,6 +270,7 @@ button {
 
 .job-info span {
   color: #475467;
+
   font-size: 13px;
 }
 
@@ -262,8 +279,10 @@ button {
 }
 
 
+
 .posted-date {
   color: #98a2b3;
+
   font-size: 12px;
 
   padding-top: 14px;
@@ -274,6 +293,7 @@ button {
 
 .card-actions {
   display: grid;
+
   grid-template-columns: 1fr 1fr;
 
   gap: 12px;
@@ -297,6 +317,7 @@ button {
 
 .apply-button {
   border: none;
+
   background: #6f2fd6;
   color: white;
 }
@@ -307,29 +328,38 @@ button {
 
 .apply-button.applied {
   background: #12b76a;
+
   cursor: default;
 }
 
 
+
 .feedback-button {
   border: 1px solid #d0d5dd;
+
   background: white;
   color: #344054;
 }
 
 .feedback-button:hover {
   border-color: #6f2fd6;
+
   color: #6f2fd6;
+
   background: #faf7ff;
 }
 
+
+
 .modal-overlay {
   position: fixed;
+
   inset: 0;
 
   background: rgba(16, 24, 40, 0.55);
 
   display: flex;
+
   align-items: center;
   justify-content: center;
 
@@ -337,6 +367,7 @@ button {
 
   z-index: 999;
 }
+
 
 
 .feedback-modal {
@@ -355,22 +386,32 @@ button {
   animation: modalOpen 0.2s ease;
 }
 
+
+
 @keyframes modalOpen {
   from {
     opacity: 0;
-    transform: translateY(15px) scale(0.98);
+
+    transform:
+      translateY(15px)
+      scale(0.98);
   }
 
   to {
     opacity: 1;
-    transform: translateY(0) scale(1);
+
+    transform:
+      translateY(0)
+      scale(1);
   }
 }
 
 
 .modal-header {
   display: flex;
+
   justify-content: space-between;
+
   gap: 20px;
 
   margin-bottom: 28px;
@@ -389,19 +430,24 @@ button {
 
 .modal-header h2 {
   font-size: 23px;
+
   margin-bottom: 5px;
 }
 
 .modal-job-title {
   color: #667085;
+
   font-size: 13px;
 }
+
+
 
 .close-button {
   width: 34px;
   height: 34px;
 
   border: none;
+
   background: #f2f4f7;
 
   color: #475467;
@@ -409,6 +455,7 @@ button {
   border-radius: 50%;
 
   font-size: 23px;
+
   line-height: 1;
 
   flex-shrink: 0;
@@ -417,6 +464,7 @@ button {
 .close-button:hover {
   background: #eaecf0;
 }
+
 
 
 .rating-section {
@@ -437,11 +485,13 @@ button {
 
 .stars {
   display: flex;
+
   gap: 6px;
 }
 
 .star {
   border: none;
+
   background: transparent;
 
   color: #d0d5dd;
@@ -463,13 +513,17 @@ button {
 
 .rating-text {
   color: #667085;
+
   font-size: 12px;
+
   margin-top: 5px;
 }
 
 
+
 .feedback-input {
   position: relative;
+
   margin-bottom: 25px;
 }
 
@@ -481,6 +535,7 @@ button {
   min-height: 120px;
 
   border: 1px solid #d0d5dd;
+
   border-radius: 9px;
 
   padding: 12px;
@@ -503,6 +558,8 @@ button {
   color: #98a2b3;
 }
 
+
+
 .character-count {
   position: absolute;
 
@@ -515,8 +572,10 @@ button {
 }
 
 
+
 .modal-actions {
   display: flex;
+
   justify-content: flex-end;
 
   gap: 10px;
@@ -534,9 +593,13 @@ button {
   font-weight: 650;
 }
 
+
+
 .cancel-button {
   border: 1px solid #d0d5dd;
+
   background: white;
+
   color: #344054;
 }
 
@@ -544,15 +607,20 @@ button {
   background: #f9fafb;
 }
 
+
+
 .submit-button {
   border: none;
+
   background: #6f2fd6;
+
   color: white;
 }
 
 .submit-button:hover {
   background: #5c20bb;
 }
+
 
 
 @media (max-width: 900px) {
@@ -564,6 +632,7 @@ button {
     grid-template-columns: 1fr;
   }
 }
+
 
 
 @media (max-width: 600px) {
@@ -581,11 +650,13 @@ button {
 
   .job-card {
     padding: 20px;
+
     border-radius: 14px;
   }
 
   .job-info {
     grid-template-columns: 1fr;
+
     gap: 10px;
   }
 
@@ -595,6 +666,7 @@ button {
 
   .feedback-modal {
     padding: 22px;
+
     border-radius: 14px;
   }
 
@@ -604,12 +676,16 @@ button {
 
   .success-message {
     top: 15px;
+
     right: 15px;
     left: 15px;
+
     justify-content: center;
+
     text-align: center;
   }
 }
+
 
 
 @media (max-width: 400px) {
